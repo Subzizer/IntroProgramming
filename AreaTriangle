@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	double num1, num2, num3, num4, num5;
+	cout << "solve for the area of a triangle, insert first side: ";
+	cin >> num1;
+	cout << "insert second side: ";
+	cin >> num2;
+	cout << "insert third side: ";
+	cin >> num3;
+	num4 = ( num1 + num2 + num3 )/2;
+	num5 = sqrt ( num4 * ( num4 - num3) * ( num4 - num2) * ( num4 - num1) );
+	cout << "the answer is: " << num5 << " ." << endl;
+
+	return 0;
+
+}
